@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+            text-align: center; /* Center-align content */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333; /* Dark gray text color */
+            margin-top: 70px; /* Add space above the heading */
+        }
+
+        form {
+            margin-top: 20px; /* Add space below the heading */
+        }
+
+        textarea, select, input[type="submit"] {
+            margin-top: 10px; /* Add space between form elements */
+            width: 40%; /* Set width to 80% of the container */
+            padding: 10px; /* Add padding to form elements */
+            border: 2px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border radius */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            font-size: 16px; /* Set font size */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            cursor: pointer; /* Show pointer cursor on hover
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green background on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Language Translation</h1>
+    <form action="/translate" method="post">
+        <textarea name="text" rows="8" placeholder="Enter text to translate"></textarea><br>
+        <p>Select Language:
+            <select name="dest_lang" id="dest_lang" style="width: 15%"></p>
+            <option value="English">English</option>
+            <option value="French">French</option>
+
+        </select><br>
+
+        <input type="submit" value="Translate">
+    </form>
+</body>
+</html>

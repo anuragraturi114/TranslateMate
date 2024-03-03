@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+            text-align: center; /* Center-align content */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333; /* Dark gray text color */
+            margin-top: 50px; /* Add space above the heading */
+        }
+
+        .box {
+            background-color: #fff; /* White background for boxes */
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 20px; /* Padding inside the boxes */
+            margin: 20px auto; /* Center-align and add space between boxes */
+            max-width: 600px; /* Limit width of boxes */
+        }
+
+        p {
+            margin-top: 20px; /* Add space between paragraphs */
+            font-size: 18px; /* Set font size */
+        }
+
+        strong {
+            color: #4CAF50; /* Green text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Translation Result</h1>
+    <div class="box">
+        <p><strong>Original text:</strong> {{ text }}</p>
+    </div>
+    <div class="box">
+        <p><strong>Translated text:</strong> {{ translated_text }}</p>
+    </div>
+     <p><strong>Translated to:</strong> {{ dest_lang }}</p>
+
+</body>
+</html>
